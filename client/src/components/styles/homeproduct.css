@@ -1,0 +1,38 @@
+.category-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 30px;
+  border-radius: 12px;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.category-header h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+.category-header a {
+  font-size: 14px;
+  color: #2b9348;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.category-header a:hover {
+  color: #238636;
+  text-decoration: none;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}

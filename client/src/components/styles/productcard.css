@@ -31,6 +31,7 @@
   font-size: 14px;
   color: #777;
   margin-top: 6px;
+  margin-left: 25px;
   text-align: left;
 }
 .lower{
@@ -39,4 +40,20 @@
     align-items: center;
     padding: 12px 16px;
     border-top: 1px solid #eee;
+}
+.lower p{
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  margin: 0;
+}
+.lower button {
+  width: 60px;
+  background-color: white;
+  color: #2b9348;
+  border: 1px solid #2b9348;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
