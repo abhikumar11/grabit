@@ -35,5 +35,6 @@ let products = [
           price: 29,
           productimage: "https://lnk.ink/3ed1S",
      },
+
 ];
 export default products;
