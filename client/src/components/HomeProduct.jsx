@@ -1,18 +1,24 @@
 import React, { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
-import products from "../assets/ProductData";
 import "./styles/homeproduct.css";
 const HomeProduct = () => {
      const [items, setItems] = useState([]);
 
      useEffect(() => {
-          setItems(products);
+
+          const fetchData =async()=>{
+               const res=await fetch("http://localhost:3001/api/product/getall");
+               const data=await res.json();
+               setItems(data);
+          }
+          fetchData();
+          
      }, []);
-     console.log("items", items);
+     console.log("items",items);
      return (
           <div className="category-section">
                <div className="category-header">
-                    <h2>Product Category Name</h2>
+                    {items.length > 0 && <h2>{items[0].categoryid?.name}</h2>}
                     <a href="#">See All</a>
                </div>
 
