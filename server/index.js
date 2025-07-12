@@ -1,7 +1,8 @@
 const express=require("express");
+const connectDb = require("./config/db");
 const app=express();
 app.use(express.json());
-const PORT=3001;
+connectDb()
 app.listen(()=>{
-    console.log(`listening on port ${PORT}`)
+    console.log(`listening on port ${process.env.PORT}`)
 })
