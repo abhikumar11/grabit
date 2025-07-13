@@ -7,6 +7,7 @@ app.use(cors());
 app.use(express.json());
 connectDb();
 
+app.get("/api/ping", (req, res) => res.send("pong"));
 app.use("/api", require("./routes"))
 const PORT = process.env.PORT || 5000;
 app.listen(PORT,() => {
